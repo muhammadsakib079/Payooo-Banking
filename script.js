@@ -9,37 +9,26 @@ document.getElementById('login-btn')
         const pinElement = document.getElementById('pin');
         const mNumber = numberElement.value;
         const pin = pinElement.value;
-        validContact(mNumber)
-        validPIN(pin);
-        function validContact(contact) {
-            if (contact.length == 11 && !contact.includes(" ") && contact.slice(0, 2) == "01") {
-                if (contact.toString() == userData) {
-                    return true;
+        validContact(mNumber, pin)
+        function validContact(contact, code) {
+            if (contact.length == 11 && !contact.includes(" ") && contact.slice(0, 2) == "01" && code.length == 4 && !code.includes(" ")) {
+                if (contact.toString() == userData && code.toString() == userPIN) {
+                    const linkElement = document.createElement('a');
+                    linkElement.href = '/home.html'
+                    linkElement.click();
                 }
                 else {
                     document.getElementById('number').style.color = 'red';
+                    document.getElementById('pin').style.color = 'red';
                 }
             }
             else{
                 document.getElementById('number').style.color = 'red';
-            }
-            
-        }
-        function validPIN(code) {
-            if (code.length == 4 && !code.includes(" ")) {
-                if (code.toString() == userPIN) {
-                    return true;
-                }
-                else {
-                    document.getElementById('pin').style.color = 'red';
-                }
-            }
-            else {
                 document.getElementById('pin').style.color = 'red';
             }
             
         }
-    
+
           })
 
 
