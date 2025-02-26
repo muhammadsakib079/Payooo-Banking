@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Payooo!</title>
+  </head>
+  <body class="bg-slate-800" id="body">
+    <section class="max-w-md min-h-screen mx-auto bg-slate-100">
+      <header class="bg-white">
+        <nav
+          class="flex justify-between items-center p-4 border-gray-200 border-2"
+        >
+          <div class="flex items-center">
+            <img class="w-12" src="./image/Group.png" alt="" />
+            <div>
+              <h3 class="text-lg font-extrabold">$0.00</h3>
+              <p class="text-sm text-gray-500">Available Balance</p>
+            </div>
+          </div>
+          <div>
+            <button class="btn text-gray-500">
+              <a href="/index.html"
+                ><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+                Log Out</a
+              >
+            </button>
+          </div>
+        </nav>
+      </header>
+      <main class="py-8 px-6 bg-white rounded-b-4xl">
+        <section class="pb-8" id="welcome">
+          <h3 class="text-2xl font-bold pb-3">🔥Welcome to Payooo!</h3>
+          <p class="text-gray-500">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </section>
+        <section id="btn-section" class="grid grid-cols-3 gap-4">
+          <div
+            id="add_money_btn"
+            class=" border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100 "
+          >
+            <img class="w-6 mx-auto" src="./image/wallet1.png" alt="" />
+            <p class="text-gray-500 pt-2">Add Money</p>
+          </div>
+          <div id="cashout_btn"
+            class=" border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100 "
+          >
+            <img class="w-6 mx-auto" src="./image/send1.png" alt="" />
+            <p class="text-gray-500 pt-2">Cashout</p>
+          </div>
+          <div id="transfer_Money_btn"
+            class="border-gray-200 border text-center w-32 py-6 rounded-2xl hover:bg-slate-100"
+          >
+            <img class="w-6 mx-auto" src="./image/money1.png" alt="" />
+            <p class="text-gray-500 pt-2 text-sm">Transfer Money</p>
+          </div>
+          <div id="get_bonus_btn"
+            class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
+          >
+            <img class="w-6 mx-auto" src="./image/bonus1.png" alt="" />
+            <p class="text-gray-500 pt-2">Get Bonus</p>
+          </div>
+          <div id="pay_bill_btn"
+            class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
+          >
+            <img class="w-6 mx-auto" src="./image/purse1.png" alt="" />
+            <p class="text-gray-500 pt-2">Pay Bill</p>
+          </div>
+          <div id="transactions_btn"
+            class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
+          >
+            <img class="w-6 mx-auto" src="./image/transaction1.png" alt="" />
+            <p class="text-gray-500 pt-2">Transactions</p>
+          </div>
+        </section>
+      </main>
+      <footer id="footer_section" class="">
+        <!-- Add Money -->
+        <section class="hidden" id="add_money">
+          <h3 class="pl-6 text-lg font-semibold py-4">Add Money</h3>
+          <div class="hero px-6">
+            <div
+              class="card bg-base-100 py-2 rounded-4xl w-full shrink-0 shadow-2xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Select A Bank</label
+                  >
+                  <select
+                    class="select select-ghost bg-slate-100 rounded-full border-none"
+                  >
+                    <option disabled selected>Select bank</option>
+                    <option>Bkash</option>
+                    <option>Payoner</option>
+                    <option>Paypal</option>
+                  </select>
+
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Bank Account Number</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Enter 11 digit account number"
+                  />
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Amount to Add</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Add Amount to withdraw"
+                  />
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Pin Number</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Enter 4 digit pin number"
+                  />
+
+                  <button
+                    class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Cashout -->
+        <section class="hidden" id="cashout">
+          <h3 class="pl-6 text-lg font-semibold py-4">Cash Out</h3>
+          <div class="hero px-6">
+            <div
+              class="card bg-base-100 py-2 rounded-4xl w-full shrink-0 shadow-2xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Agent Number</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Enter 11 digit number"
+                  />
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Amount</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Enter amount to withdraw"
+                  />
+                  <label class="fieldset-label text-sm font-medium py-2"
+                    >Pin Number</label
+                  >
+                  <input
+                    type="text"
+                    class="input bg-slate-100 text-sm rounded-full border-none p-6"
+                    placeholder="Enter 4 digit pin number"
+                  />
+
+                  <button
+                    class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
+                  >
+                  Withdraw Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </section>
+
+    <script src="./section.js"></script>
+  </body>
+</html>
