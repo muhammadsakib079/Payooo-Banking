@@ -14,7 +14,7 @@ document.getElementById('login-btn')
             if (contact.length == 11 && !contact.includes(" ") && contact.slice(0, 2) == "01" && code.length == 4 && !code.includes(" ")) {
                 if (contact.toString() == userData && code.toString() == userPIN) {
                     const linkElement = document.createElement('a');
-                    linkElement.href = '/home.html'
+                    linkElement.href = 'home.html'
                     linkElement.click();
                 }
                 else {
