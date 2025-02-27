@@ -28,7 +28,7 @@
           <div class="flex items-center">
             <img class="w-12" src="./image/Group.png" alt="" />
             <div>
-              <h3 class="text-lg font-extrabold">$0.00</h3>
+              <h3  class="text-lg font-extrabold">$ <span id="balance">0.00</span></h3>
               <p class="text-sm text-gray-500">Available Balance</p>
             </div>
           </div>
@@ -99,7 +99,7 @@
       </main>
       <footer id="footer_section" class="">
         <!-- Add Money Section -->
-        <section class="hidden" id="add_money">
+        <section class="hidde" id="add_money">
           <h3 class="pl-6 text-lg font-semibold py-4">Add Money</h3>
           <div class="hero px-6">
             <div
@@ -110,19 +110,19 @@
                   <label class="fieldset-label text-sm font-medium py-2"
                     >Select A Bank</label
                   >
-                  <select
+                  <select id="add_money_input_1"
                     class="select select-ghost bg-slate-100 rounded-full border-none"
                   >
                     <option disabled selected>Select bank</option>
-                    <option>Bkash</option>
-                    <option>Payoner</option>
-                    <option>Paypal</option>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Payoner">Payoner</option>
+                    <option value="Paypal">Paypal</option>
                   </select>
 
                   <label class="fieldset-label text-sm font-medium py-2"
                     >Bank Account Number</label
                   >
-                  <input
+                  <input id="add_money_input_2"
                     type="text"
                     class="input bg-slate-100 text-sm rounded-full border-none p-6"
                     placeholder="Enter 11 digit account number"
@@ -130,7 +130,7 @@
                   <label class="fieldset-label text-sm font-medium py-2"
                     >Amount to Add</label
                   >
-                  <input
+                  <input id="add_money_input_3"
                     type="text"
                     class="input bg-slate-100 text-sm rounded-full border-none p-6"
                     placeholder="Add Amount to withdraw"
@@ -138,13 +138,13 @@
                   <label class="fieldset-label text-sm font-medium py-2"
                     >Pin Number</label
                   >
-                  <input
+                  <input id="add_money_input_4"
                     type="text"
                     class="input bg-slate-100 text-sm rounded-full border-none p-6"
                     placeholder="Enter 4 digit pin number"
                   />
 
-                  <button
+                  <button id="add_money_submit"
                     class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
                   >
                     Add Money

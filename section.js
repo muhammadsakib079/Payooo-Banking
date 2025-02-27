@@ -26,6 +26,23 @@ document.getElementById("add_money_btn")
     const tSection = document.getElementById('footer_section');
     tSection.classList.remove('hidden');
   })
+
+  document.getElementById('add_money_submit')
+  .addEventListener('click', function addMoneySubmit(){
+    const inputElement1 = document.getElementById('add_money_input_1');
+    const inputElement2 = document.getElementById('add_money_input_2');
+    const inputElement3 = document.getElementById('add_money_input_3');
+    const inputElement4 = document.getElementById('add_money_input_4');
+    const bank = inputElement1.value;
+    const accountNumber = inputElement2.value;
+    const amount = inputElement3.value;
+    const PIN = inputElement4.value;
+    if (bank == "Bkash" && accountNumber.length == 11 && !accountNumber.includes(" ") && accountNumber.slice(0, 2) == "01" && PIN.length == 4 && !PIN.includes(" ")){
+      const balance = document.getElementById('balance');
+      balance.innerText = amount;
+      
+    }
+  })
 // Cashout Section
 document.getElementById("cashout_btn")
   .addEventListener('click', function activateSection() {
