@@ -18,9 +18,10 @@
     />
     <title>Payooo!</title>
   </head>
-  <body class="bg-slate-800" id="body">
+  <body class="bg-slate-800">
     <section class="max-w-md min-h-screen mx-auto bg-slate-100">
       <header class="bg-white">
+        <!-- Nav Bar Section -->
         <nav
           class="flex justify-between items-center p-4 border-gray-200 border-2"
         >
@@ -42,6 +43,7 @@
         </nav>
       </header>
       <main class="py-8 px-6 bg-white rounded-b-4xl">
+        <!-- Welcome Section -->
         <section class="pb-8" id="welcome">
           <h3 class="text-2xl font-bold pb-3">🔥Welcome to Payooo!</h3>
           <p class="text-gray-500">
@@ -49,39 +51,45 @@
             is low and
           </p>
         </section>
+        <!-- Button Section -->
         <section id="btn-section" class="grid grid-cols-3 gap-4">
           <div
             id="add_money_btn"
-            class=" border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100 "
+            class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/wallet1.png" alt="" />
             <p class="text-gray-500 pt-2">Add Money</p>
           </div>
-          <div id="cashout_btn"
-            class=" border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100 "
+          <div
+            id="cashout_btn"
+            class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/send1.png" alt="" />
             <p class="text-gray-500 pt-2">Cashout</p>
           </div>
-          <div id="transfer_Money_btn"
+          <div
+            id="transfer_Money_btn"
             class="border-gray-200 border text-center w-32 py-6 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/money1.png" alt="" />
             <p class="text-gray-500 pt-2 text-sm">Transfer Money</p>
           </div>
-          <div id="get_bonus_btn"
+          <div
+            id="get_bonus_btn"
             class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/bonus1.png" alt="" />
             <p class="text-gray-500 pt-2">Get Bonus</p>
           </div>
-          <div id="pay_bill_btn"
+          <div
+            id="pay_bill_btn"
             class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/purse1.png" alt="" />
             <p class="text-gray-500 pt-2">Pay Bill</p>
           </div>
-          <div id="transactions_btn"
+          <div
+            id="transactions_btn"
             class="border-gray-200 border text-center w-32 p-5 rounded-2xl hover:bg-slate-100"
           >
             <img class="w-6 mx-auto" src="./image/transaction1.png" alt="" />
@@ -90,7 +98,7 @@
         </section>
       </main>
       <footer id="footer_section" class="">
-        <!-- Add Money -->
+        <!-- Add Money Section -->
         <section class="hidden" id="add_money">
           <h3 class="pl-6 text-lg font-semibold py-4">Add Money</h3>
           <div class="hero px-6">
@@ -146,7 +154,7 @@
             </div>
           </div>
         </section>
-        <!-- Cashout -->
+        <!-- Cashout Section -->
         <section class="hidden" id="cashout">
           <h3 class="pl-6 text-lg font-semibold py-4">Cash Out</h3>
           <div class="hero px-6">
@@ -183,14 +191,14 @@
                   <button
                     class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
                   >
-                  Withdraw Money
+                    Withdraw Money
                   </button>
                 </fieldset>
               </div>
             </div>
           </div>
         </section>
-      <!-- TM -->
+        <!-- Transfer Money Section -->
         <section class="hidden" id="transfer_Money">
           <h3 class="pl-6 text-lg font-semibold py-4">Transfer Money</h3>
           <div class="hero px-6">
@@ -227,14 +235,14 @@
                   <button
                     class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
                   >
-                  Send Now
+                    Send Now
                   </button>
                 </fieldset>
               </div>
             </div>
           </div>
         </section>
-        <!-- GB -->
+        <!-- Get Bonus Section -->
         <section class="hidden" id="get_bonus">
           <h3 class="pl-6 text-lg font-semibold py-4">Get Bonus</h3>
           <div class="hero px-6">
@@ -251,19 +259,19 @@
                     class="input bg-slate-100 text-sm rounded-full border-none p-6"
                     placeholder="Enter your coupon"
                   />
-                
+
                   <button
                     class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
                   >
-                  Get Bonus
+                    Get Bonus
                   </button>
                 </fieldset>
               </div>
             </div>
           </div>
         </section>
-        <!-- PB -->
-        <section class="hidde" id="pay_bill">
+        <!-- Pay Bill Section -->
+        <section class="hidden" id="pay_bill">
           <h3 class="pl-6 text-lg font-semibold py-4">Pay Bill</h3>
           <div class="hero px-6">
             <div
@@ -311,7 +319,7 @@
                   <button
                     class="btn btn-neutral mt-6 h-12 text-lg border-none font-bold rounded-full bg-[#0874F2]"
                   >
-                  Pay Now
+                    Pay Now
                   </button>
                 </fieldset>
               </div>
@@ -321,7 +329,6 @@
       </footer>
     </section>
 
- 
     <script src="./section.js"></script>
   </body>
 </html>

@@ -1,41 +1,36 @@
+/* Transactions Panal Enable/Disable */
+
 document.getElementById('welcome')
   .addEventListener("click", function () {
     const tSection = document.getElementById('footer_section')
     tSection.classList.add('hidden')
-    // const btn1 = document.getElementById("cashout_btn");
-    //   btn1.style.background = 'white'
-    //   const btn2 = document.getElementById("add_money_btn");
-    //   btn2.style.background = 'white'
     const ids = ['add_money_btn', 'cashout_btn', 'transfer_Money_btn', 'get_bonus_btn', 'pay_bill_btn', 'transactions_btn']
     ids.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
   })
-
-// add money
+// Add Money Section
 document.getElementById("add_money_btn")
   .addEventListener('click', function activateSection() {
     this.style.background = '#EEEEEE'
     const section1 = document.getElementById("add_money");
     section1.classList.remove("hidden");
-    const ids1 = ['cashout','transfer_Money', 'get_bonus', 'pay_bill']
+    const ids1 = ['cashout', 'transfer_Money', 'get_bonus', 'pay_bill']
     ids1.forEach(id => {
       document.getElementById(id).classList.add("hidden");
     })
-    const ids2 = ['cashout_btn','transfer_Money_btn', 'get_bonus_btn', 'pay_bill_btn']
+    const ids2 = ['cashout_btn', 'transfer_Money_btn', 'get_bonus_btn', 'pay_bill_btn']
     ids2.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
     const tSection = document.getElementById('footer_section');
     tSection.classList.remove('hidden');
   })
-
-
-  // cashout
+// Cashout Section
 document.getElementById("cashout_btn")
   .addEventListener('click', function activateSection() {
     this.style.background = '#EEEEEE'
-    const ids2 = ['add_money_btn','transfer_Money_btn', 'get_bonus_btn', 'pay_bill_btn']
+    const ids2 = ['add_money_btn', 'transfer_Money_btn', 'get_bonus_btn', 'pay_bill_btn']
     ids2.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
@@ -48,11 +43,11 @@ document.getElementById("cashout_btn")
     const tSection = document.getElementById('footer_section')
     tSection.classList.remove('hidden')
   })
-  // TM
+// Transfer Money Section
 document.getElementById("transfer_Money_btn")
   .addEventListener('click', function activateSection() {
     this.style.background = '#EEEEEE'
-    const ids2 = ['add_money_btn','cashout_btn', 'get_bonus_btn', 'pay_bill_btn']
+    const ids2 = ['add_money_btn', 'cashout_btn', 'get_bonus_btn', 'pay_bill_btn']
     ids2.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
@@ -65,11 +60,11 @@ document.getElementById("transfer_Money_btn")
     const tSection = document.getElementById('footer_section')
     tSection.classList.remove('hidden')
   })
-  // GB
+// Get Bonus Section
 document.getElementById("get_bonus_btn")
   .addEventListener('click', function activateSection() {
     this.style.background = '#EEEEEE'
-    const ids2 = ['add_money_btn','cashout_btn', 'transfer_Money_btn', 'pay_bill_btn']
+    const ids2 = ['add_money_btn', 'cashout_btn', 'transfer_Money_btn', 'pay_bill_btn']
     ids2.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
@@ -82,11 +77,11 @@ document.getElementById("get_bonus_btn")
     const tSection = document.getElementById('footer_section')
     tSection.classList.remove('hidden')
   })
-  // PB
+// Pay Bill Section
 document.getElementById("pay_bill_btn")
   .addEventListener('click', function activateSection() {
     this.style.background = '#EEEEEE'
-    const ids2 = ['add_money_btn','cashout_btn', 'transfer_Money_btn', 'get_bonus_btn']
+    const ids2 = ['add_money_btn', 'cashout_btn', 'transfer_Money_btn', 'get_bonus_btn']
     ids2.forEach(id => {
       document.getElementById(id).style.background = 'white';
     })
@@ -99,7 +94,3 @@ document.getElementById("pay_bill_btn")
     const tSection = document.getElementById('footer_section')
     tSection.classList.remove('hidden')
   })
-  
-
-
-
